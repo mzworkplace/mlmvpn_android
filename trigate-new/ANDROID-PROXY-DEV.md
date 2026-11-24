@@ -1,0 +1,13 @@
+# Android 0.2.0 — developer proxy build, not a VPN
+
+This build is an incomplete Psiphon SOCKS proxy prototype. It has no Android VpnService and does not automatically route device traffic. No Lantern, Fenix, Tor, chaining or split tunnelling is implemented. Do not rely on it for privacy, leak prevention or security. The application can stop when its screen is closed. The loopback SOCKS port may be used by other local apps; the UI displays the port only after Psiphon reports it. Connection has not been tested on a device or live network.
+
+The bundled server entries and initial Psiphon configuration originate from the MLMVPN Android repository, commit `fdb07a5d0a99ca6347bd3716b0f0783341bac16a`, specifically `app/src/main/assets/server_entries.txt` and `TunnelVpnService.kt`. The server-list mirror configuration sets `SkipVerify` on mirrors, as in MLMVPN; the core verifies the downloaded list using the supplied signing key. This is not a guarantee of server availability or network security. Importing a different configuration may change behaviour and must be done only with trusted files.
+
+The included binary `android/app/libs/psiphontunnel-2.0.39.aar` is MLMVPN's `psiphontunnel-2.0.39-ns.aar`, SHA-256 `a0d57701c1afc3b8b5dd17686445e4474bcc69eb000221406e83bd15546d0220`. The arm64 binary's Go build information names Psiphon upstream revision `cd31fecf7b`. Psiphon source at the corresponding v2.0.39 tag is included in `third_party/psiphon-tunnel-core-v2.0.39.tar.gz`; build flags differ from the official AAR in the earlier WIP bundle. Psiphon and this project are GPL-3.0-or-later; see `LICENSE` and upstream source for notices and dependencies.
+
+## Build and signing
+
+The project is configured for Gradle 8.4 / Android Gradle Plugin 8.3.2, JDK 17 and Android SDK API 34: run `gradle :app:assembleDebug` in `android/`. The supplied development APK was instead assembled without Gradle using Android API 34, aapt2 2.20, ECJ 3.45.0 and D8 8.2.2, then signed and verified with apksigner. It contains the arm64-v8a and armeabi-v7a Psiphon libraries and targets API 34 (minimum API 24). Its package is `io.trigate.newapp.dev`, separate from older TriGate applications. The temporary development signing key is not included in the public source package. A Gradle debug build will use a different signing key and will not update this APK unless signed with the same key.
+
+The development APK is not a 3.0.0 release and is not an update to the original TriGate app. No runtime or network testing was performed. AAPT packaging, Java compilation, DEX creation and APK signature verification are the checks completed.

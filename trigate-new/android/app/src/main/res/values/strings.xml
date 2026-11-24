@@ -1,0 +1,17 @@
+<resources>
+    <string name="warning">Development version: Psiphon local SOCKS proxy only. This is not a VPN and does not route other apps automatically. It stops when this screen closes. Other local apps may use the proxy.</string>
+    <string name="stopped">Stopped</string>
+    <string name="connecting">Connecting…</string>
+    <string name="connected">Psiphon tunnel reported connected</string>
+    <string name="stopping">Stopping…</string>
+    <string name="failed">Psiphon stopped or failed</string>
+    <string name="pick_config">Import Psiphon configuration</string>
+    <string name="pick_servers">Import server entries (optional)</string>
+    <string name="start">Start Psiphon proxy</string>
+    <string name="stop">Stop</string>
+    <string name="need_config">Import a valid Psiphon configuration first.</string>
+    <string name="config_loaded">Configuration imported into memory</string>
+    <string name="servers_loaded">Server entries imported into memory</string>
+    <string name="import_failed">Could not import file; check format and size.</string>
+    <string name="busy">Session is already running or stopping.</string>
+</resources>

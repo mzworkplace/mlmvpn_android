@@ -1,0 +1,17 @@
+<resources>
+    <string name="warning">نسخهٔ در حال ساخت: فقط پروکسی محلی SOCKS سایفون. این برنامه VPN نیست و ترافیک سایر برنامه‌ها را خودکار عبور نمی‌دهد. با بسته‌شدن صفحه متوقف می‌شود. برنامه‌های محلی دیگر می‌توانند از پروکسی استفاده کنند.</string>
+    <string name="stopped">متوقف</string>
+    <string name="connecting">در حال اتصال…</string>
+    <string name="connected">هستهٔ سایفون اتصال را گزارش کرد</string>
+    <string name="stopping">در حال توقف…</string>
+    <string name="failed">سایفون متوقف شد یا خطا داد</string>
+    <string name="pick_config">واردکردن تنظیمات سایفون</string>
+    <string name="pick_servers">واردکردن فهرست سرورها (اختیاری)</string>
+    <string name="start">راه‌اندازی پروکسی سایفون</string>
+    <string name="stop">توقف</string>
+    <string name="need_config">ابتدا تنظیمات معتبر سایفون را وارد کنید.</string>
+    <string name="config_loaded">تنظیمات در حافظه وارد شد</string>
+    <string name="servers_loaded">فهرست سرورها در حافظه وارد شد</string>
+    <string name="import_failed">ورود فایل انجام نشد؛ قالب و اندازه را بررسی کنید.</string>
+    <string name="busy">نشست از قبل فعال است یا در حال توقف است.</string>
+</resources>

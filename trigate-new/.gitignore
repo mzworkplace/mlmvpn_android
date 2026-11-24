@@ -1,0 +1,11 @@
+android/.gradle/
+android/local.properties
+android/app/build/
+android/app/libs/*.aar
+*.apk
+*.aab
+*.exe
+*.jks
+*.keystore
+*.p12
+*.pfx
