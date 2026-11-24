@@ -11,7 +11,7 @@
 ## دسترسی‌ها
 
 - بکاپ عمومی و قابل تحویل به ایجنت‌ها در Drive: https://drive.google.com/drive/folders/1QivgvwUeRbfhcqDgOahRwX9FHbuxSUjo
-- مخزن GitHub عمومی `mzworkplace/mlmvpn_android` است؛ این handoff و پروژهٔ جدید روی branch `arena/23b21de7-mlmvpn-android` قرار می‌گیرند، نه الزاماً روی `main`. مسیر داخل مخزن `handoff/` و `trigate-new/` است.
+- مخزن GitHub عمومی `mzworkplace/mlmvpn_android` است؛ این handoff و پروژهٔ جدید روی branch `arena/23b21de7-mlmvpn-android` هستند، نه الزاماً روی `main`. مسیرها: [handoff](https://github.com/mzworkplace/mlmvpn_android/tree/arena/23b21de7-mlmvpn-android/handoff) و [trigate-new](https://github.com/mzworkplace/mlmvpn_android/tree/arena/23b21de7-mlmvpn-android/trigate-new).
 - پشتیبان کلیدهای امضا جداگانه، در پوشه‌ای خصوصی در My Drive نگهداری می‌شود. مالک می‌تواند شخصاً به ایجنت مورد اعتماد دسترسی دهد؛ هرگز کلید یا رمز را در GitHub عمومی یا پوشهٔ عمومی قرار ندهید.
 - سورس کامل TriGate قدیمی و کلید release موبایل قدیمی پیدا نشدند؛ فایل‌های دی‌کامپایل‌شده و اجرایی جایگزین سورس اصلی نیستند.
 
